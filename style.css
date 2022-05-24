@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  background: #000000;
+  height: 80px;
+  width: 100vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 2px solid #fbff00;
+  border-top: 2px solid #fbff00;
+}
+
+nav #brand-logo img {
+  height: auto;
+  width: 200px;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+ul#main-nav {
+  list-style: none;
+  float: right;
+  margin-top: 25px;
+}
+
+ul#main-nav li {
+  display: inline-block;
+  margin-right: 30px;
+  -webkit-box-shadow: 2px 2px 4px solid #ffffff;
+          box-shadow: 2px 2px 4px solid #ffffff;
+}
+
+ul#main-nav li a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#bar {
+  float: right;
+  margin-top: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+ul#main-nav li:last-child {
+  margin-right: 0px;
+}
+
+ul#service-nav {
+  display: none;
+  background: #000000;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  position: absolute;
+  top: 55px;
+}
+
+ul#service-nav li {
+  display: block !important;
+  padding: 10px 0;
+  border-top: 1px solid #fbff00;
+  width: 100%;
+}
+
+#services:hover ul#service-nav {
+  display: block;
+}
+
+ul#development-nav {
+  display: none;
+  background: #000000;
+  padding: 10px;
+  position: absolute;
+  top: 55px;
+}
+
+ul#development-nav li {
+  display: block !important;
+  padding: 10px 0;
+  border-top: 1px solid #fbff00;
+  width: 100%;
+}
+
+#development:hover ul#development-nav {
+  display: block;
+}
+
+@media only screen and (max-width: 780px) {
+  ul#main-nav {
+    display: none;
+  }
+  .active {
+    background: #000000;
+    top: 40px;
+    position: absolute;
+    padding-left: 20px;
+    width: 100%;
+    left: 0;
+    display: block !important;
+  }
+  .active li {
+    display: block !important;
+    padding: 10px 0;
+  }
+  #services:hover ul#service-nav {
+    width: 100%;
+    display: block;
+    left: 0;
+    position: static;
+  }
+  ul#service-nav li {
+    border-top: 1px solid #fbff00;
+    width: 100%;
+  }
+  ul#service-nav li:last-child {
+    border-bottom: 1px solid #fbff00;
+  }
+  #development:hover ul#development-nav {
+    width: 100%;
+    display: block;
+    left: 0;
+    position: static;
+  }
+  ul#development-nav li {
+    border-top: 1px solid #fbff00;
+    width: 100%;
+  }
+  ul#development-nav li:last-child {
+    border-bottom: 1px solid #fbff00;
+  }
+  #bar {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #brand-logo img {
+    width: 150px !important;
+    -webkit-transition: .5s ease-in;
+    margin-top: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
